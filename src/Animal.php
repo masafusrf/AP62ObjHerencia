@@ -13,7 +13,7 @@
         }
 
         function presentacion(){
-            echo "Soy un animal llamado" . $this->nombre . ":" . hacerSonido();
+            echo "Soy un animal llamado " . $this->nombre;
         }
     }
 

@@ -1,14 +1,17 @@
 <?php
 
     class Perro extends Animal{
+
+        function __construct($name){
+            parent::__construct($name);
+        }
+
         function hacerSonido(){
-            echo "Guau";
-            parent::hacerSonido();
+            return "Guau";
         }
 
         function presentacion(){
-            echo "Soy un animal llamado" . $this->nombre . ":" . hacerSonido();
-            parent::presentacion();
+            return "Soy un animal llamado " . $this->nombre;
         }
         
     }
